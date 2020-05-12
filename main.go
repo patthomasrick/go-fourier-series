@@ -17,7 +17,7 @@ func main() {
 	f := NewFourier(squareWave, 0.0, 1.0, 100)
 	tElapsed := time.Now().Sub(tStart)
 	log.Printf("Took %v to approximate the Fourier series.\n", tElapsed)
-	f.CreatePlot("plot")
+	f.CreatePlot("plot_square")
 }
 
 func squareWave(t float64) float64 {
